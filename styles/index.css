@@ -5,10 +5,19 @@
     --grayish-blue: hsl(208, 11%, 55%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1240px;
 }
