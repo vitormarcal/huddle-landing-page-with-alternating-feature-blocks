@@ -21,3 +21,13 @@ body {
     width: 95%;
     max-width: 1240px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 115px;
+}
