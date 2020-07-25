@@ -13,6 +13,11 @@ input {
   box-shadow: none;
 }
 
+.button, header .header__button {
+  border: 1px solid black;
+  width: 93px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }
@@ -38,7 +43,11 @@ header {
 }
 
 header .header__logo {
-  width: 115px;
+  width: 93px;
+}
+
+header .header__button {
+  background-color: white;
 }
 
 main {
