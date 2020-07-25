@@ -15,7 +15,9 @@ input {
 
 .button, header .header__button {
   border: 1px solid black;
+  border-radius: 20px;
   width: 93px;
+  height: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
