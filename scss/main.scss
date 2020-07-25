@@ -5,6 +5,9 @@
   $very-dark-cyan: hsl(192, 100%, 9%);
   $grayish-blue: hsl(208, 11%, 55%);
 
+  $font-family-poppins-sans-serif: 'Poppins', sans-serif;
+  $font-family-open-sans-serif: 'Open Sans', sans-serif;
+
 // end variables
 
 //start resets css
@@ -15,7 +18,7 @@
   box-sizing: border-box;
 }
 
-input {
+input, button {
   border:none;
   background-image:none;
   background-color:transparent;
@@ -24,21 +27,31 @@ input {
   box-shadow: none;
 }
 
+//end resets css
+
+.font-poppins {
+  font-family: $font-family-poppins-sans-serif;
+}
+
+.font-open {
+  font-family: $font-family-open-sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .font-poppins;
+}
+
 .button {
-  border: 1px solid black;
+  @extend .font-poppins;
+  border: 1px solid white;
   border-radius: 20px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
   width: 93px;
   height: 25px;
 }
 
-//end resets css
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  @extend .font-open;
   margin: 0 auto;
   padding: 2rem 1rem;
   width: 95%;
