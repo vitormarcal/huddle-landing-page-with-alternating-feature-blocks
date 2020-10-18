@@ -41,12 +41,16 @@ h1, h2, h3, h4, h5, h6 {
   @extend .font-poppins;
 }
 
-.button {
-  @extend .font-open;
+.border-radius {
   border: 1px solid white;
   border-radius: 20px;
-  background-color: $pink;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.button {
+  @extend .font-open;
+  @extend .border-radius;
+  background-color: $pink;
   width: 240px;
   height: 40px;
 
@@ -112,4 +116,30 @@ section {
     .button {
       margin: 10% 0;
     }
+  }
+
+  .card-list {
+    .card {
+      @extend .border-radius;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10%;
+      padding: 10%;
+      
+      p {
+        font-weight: 400;
+        color: $grayish-blue;
+      }
+    }
+
+    .card__grow {
+      @extend .card;
+    }
+    .card__flowing {
+      @extend .card;
+    }
+    .card__users {
+      @extend .card;
+    }
+  
   }
