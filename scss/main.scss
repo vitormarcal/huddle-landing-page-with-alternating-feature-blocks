@@ -119,16 +119,24 @@ section {
   }
 
   .card-list {
+    margin-top: 10%;
     .card {
       @extend .border-radius;
       display: flex;
       flex-direction: column;
       margin-bottom: 10%;
       padding: 10%;
+
+      h2 {
+        margin: 40px 0 15px 0;
+        text-align: center;
+      }
       
       p {
+        line-height: 21px;
         font-weight: 400;
         color: $grayish-blue;
+        text-align: center;
       }
     }
 

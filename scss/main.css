@@ -111,6 +111,10 @@ section .button, section header .header__button, header section .header__button 
   margin: 10% 0;
 }
 
+.card-list {
+  margin-top: 10%;
+}
+
 .card-list .card, .card-list .card__grow, .card-list .card__flowing, .card-list .card__users {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,8 +127,15 @@ section .button, section header .header__button, header section .header__button 
   padding: 10%;
 }
 
+.card-list .card h2, .card-list .card__grow h2, .card-list .card__flowing h2, .card-list .card__users h2 {
+  margin: 40px 0 15px 0;
+  text-align: center;
+}
+
 .card-list .card p, .card-list .card__grow p, .card-list .card__flowing p, .card-list .card__users p {
+  line-height: 21px;
   font-weight: 400;
   color: #808d99;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
