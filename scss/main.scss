@@ -39,12 +39,13 @@ input, button {
 
 h1, h2, h3, h4, h5, h6 {
   @extend .font-poppins;
+  text-align: center;
 }
 
 .border-radius {
   border: 1px solid white;
-  border-radius: 20px;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  border-radius: 15px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
 }
 
 .button {
@@ -131,7 +132,6 @@ section {
 
       h2 {
         margin: 40px 0 15px 0;
-        text-align: center;
       }
       
       p {
@@ -156,10 +156,25 @@ section {
 
   .get-started {
     @extend .border-radius;
+    top: 17vh;
+    position: relative;
+    background-color: white;
+    min-width: 344px;
+    padding: 35px 0 10px 0;
+
+    h2 {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .button {
+      margin: 26px;
+    }
+
   }
 
   footer {
-    padding: 25vh 2vh;
+    padding: 25vh 2vh 1vh 2vh;
     background-color: $very-dark-cyan;
     p {
       color: white;
