@@ -18,7 +18,23 @@
   box-sizing: border-box;
 }
 
+.font-poppins {
+  font-family: $font-family-poppins-sans-serif;
+}
+
+.font-open {
+  font-family: $font-family-open-sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
 input, button {
+  @extend .font-open;
   border:none;
   background-image:none;
   background-color:transparent;
@@ -28,14 +44,6 @@ input, button {
 }
 
 //end resets css
-
-.font-poppins {
-  font-family: $font-family-poppins-sans-serif;
-}
-
-.font-open {
-  font-family: $font-family-open-sans-serif;
-}
 
 h1, h2, h3, h4, h5, h6 {
   @extend .font-poppins;
@@ -91,7 +99,7 @@ header {
 
 main {
   width: 95%;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   margin: 8vh 1vh 0 1vh;
   display: flex;
   flex-direction: column;
@@ -168,7 +176,9 @@ section {
     }
 
     .button {
+      width: 200px;
       margin: 26px;
+      font-size: 10px;
     }
 
   }
@@ -176,11 +186,53 @@ section {
   footer {
     padding: 25vh 2vh 1vh 2vh;
     background-color: $very-dark-cyan;
+
+    .footer__logo {
+      width: 175px;
+      filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+    }
+
     p {
       color: white;
     }
 
-    .footer__logo {
-      filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+    address {
+
+      .address__item {
+        display: flex;
+        margin: 25px 0;
+
+        div {
+          width: 130px;
+          max-width: 43px;
+        }
+
+        p {
+          font-style: normal;
+          text-align: left;
+          line-height: 24px;
+        }
+      }
     }
+
+    nav {
+      li {
+        margin-bottom: 16px;
+        a {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+    }
+
+    .copyright {
+      margin-top: 8vh;
+      text-align: center;
+      p {
+        @extend .font-poppins;
+        font-size: 11.3px;
+      }
+    }
+
+    
   }
