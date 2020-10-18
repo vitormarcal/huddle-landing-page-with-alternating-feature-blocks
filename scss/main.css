@@ -5,20 +5,27 @@
           box-sizing: border-box;
 }
 
+.font-poppins, h1, h2, h3, h4, h5, h6, footer .copyright p {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-open, input, button, .button, header .header__button, body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
 input, button {
   border: none;
   background-image: none;
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-.font-poppins, h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
-}
-
-.font-open, .button, header .header__button, body {
-  font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,7 +82,7 @@ header .header__button {
 
 main {
   width: 95%;
-  padding: 2rem 1rem;
+  padding: 0 1rem;
   margin: 8vh 1vh 0 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,7 +167,9 @@ section .button, section header .header__button, header section .header__button 
 }
 
 .get-started .button, .get-started header .header__button, header .get-started .header__button {
+  width: 200px;
   margin: 26px;
+  font-size: 10px;
 }
 
 footer {
@@ -168,12 +177,49 @@ footer {
   background-color: #00252e;
 }
 
+footer .footer__logo {
+  width: 175px;
+  -webkit-filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+          filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+}
+
 footer p {
   color: white;
 }
 
-footer .footer__logo {
-  -webkit-filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
-          filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+footer address .address__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+}
+
+footer address .address__item div {
+  width: 130px;
+  max-width: 43px;
+}
+
+footer address .address__item p {
+  font-style: normal;
+  text-align: left;
+  line-height: 24px;
+}
+
+footer nav li {
+  margin-bottom: 16px;
+}
+
+footer nav li a {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+footer .copyright {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+footer .copyright p {
+  font-size: 11.3px;
 }
 /*# sourceMappingURL=main.css.map */
