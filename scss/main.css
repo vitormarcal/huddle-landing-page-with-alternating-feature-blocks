@@ -13,21 +13,27 @@ input, button {
   box-shadow: none;
 }
 
-.font-poppins, h1, h2, h3, h4, h5, h6, .button, header .header__button {
+.font-poppins, h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.font-open, body {
+.font-open, .button, header .header__button, body {
   font-family: "Open Sans", sans-serif;
 }
 
 .button, header .header__button {
   border: 1px solid white;
   border-radius: 20px;
+  background-color: #ff52bf;
   -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
           box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  width: 93px;
-  height: 25px;
+  width: 240px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 16.34px;
+  color: #ebfbff;
+  text-align: center;
+  font-weight: bold;
 }
 
 body {
@@ -55,6 +61,10 @@ header .header__logo {
 
 header .header__button {
   background-color: white;
+  font-size: 13px;
+  width: 96px;
+  height: 24px;
+  color: #00252e;
 }
 
 main {
@@ -92,5 +102,9 @@ section .text {
 
 section img {
   width: 100%;
+}
+
+section .button, section header .header__button, header section .header__button {
+  margin: 10% 0;
 }
 /*# sourceMappingURL=main.css.map */
