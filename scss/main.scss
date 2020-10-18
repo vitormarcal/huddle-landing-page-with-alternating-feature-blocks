@@ -42,12 +42,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
-  @extend .font-poppins;
+  @extend .font-open;
   border: 1px solid white;
   border-radius: 20px;
+  background-color: $pink;
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
-  width: 93px;
-  height: 25px;
+  width: 240px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 16.34px;
+  color: $very-pale-cyan;
+  text-align: center;
+  font-weight: bold;
+  
 }
 
 body {
@@ -70,6 +78,10 @@ header {
   .header__button {
     @extend .button;
     background-color: white;
+    font-size: 13px;
+    width: 96px;
+    height: 24px;
+    color: $very-dark-cyan;
   }
 }
 
@@ -95,5 +107,9 @@ section {
 
     img {
         width: 100%;
+    }
+
+    .button {
+      margin: 10% 0;
     }
   }
