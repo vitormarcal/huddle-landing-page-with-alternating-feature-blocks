@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
 }
 
+.border-radius--plus {
+  border-radius: 26px;
+}
+
 .button {
   @extend .font-open;
   @extend .border-radius;
@@ -71,6 +75,29 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+      padding: 1rem;
+      text-align: center;
+  }
+    
+  .text {
+      text-align: center;
+  }
+
+  img {
+      width: 100%;
+  }
+
+  .button {
+    margin: 10% 0;
+  }
+}
+
 body {
   @extend .font-open;
   margin: 0 auto;
@@ -79,12 +106,28 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin: 2rem 1rem;
+  margin: 0;
 
-  .header__logo {
-    width: 93px;
+  background: url(../images/bg-hero-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 1rem;
+    padding: 0 1rem;
+   
+    width: 100%;
+    .header__logo {
+      width: 93px;
+    }
   }
 
   .header__button {
@@ -94,16 +137,9 @@ header {
     width: 96px;
     height: 24px;
     color: $very-dark-cyan;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-}
 
-main {
-  width: 95%;
-  padding: 0 1rem;
-  margin: 8vh 1vh 0 1vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   &::before {
     content: "";
@@ -115,30 +151,31 @@ main {
     height: 100%;
     z-index: -1;
   }
-}
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .featured {
+    padding-bottom: 1rem;
+    line-height: 24px;
+    padding: 5px 26px;
 
-    .title {
-        padding: 1rem;
-        text-align: center;
-    }
-      
-    .text {
-        text-align: center;
+    .button {
+      @extend .border-radius--plus;
     }
 
     img {
-        width: 100%;
-    }
-
-    .button {
-      margin: 10% 0;
+      width: 90%;
     }
   }
+
+}
+
+main {
+  width: 95%;
+  padding: 0 1rem;
+  margin: 8vh 1vh 0 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .merchan {
     margin-top: 10%;
@@ -190,6 +227,7 @@ section {
       width: 200px;
       margin: 26px;
       font-size: 10px;
+      @extend .border-radius--plus;
     }
 
   }
