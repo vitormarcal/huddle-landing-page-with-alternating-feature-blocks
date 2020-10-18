@@ -21,7 +21,7 @@ input, button {
   font-family: "Open Sans", sans-serif;
 }
 
-.border-radius, .button, header .header__button, .card-list .card, .card-list .card__grow, .card-list .card__flowing, .card-list .card__users {
+.border-radius, .button, header .header__button, .merchan .card, .merchan .card__grow, .merchan .card__flowing, .merchan .card__users, .get-started {
   border: 1px solid white;
   border-radius: 20px;
   -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -41,8 +41,6 @@ input, button {
 
 body {
   margin: 0 auto;
-  padding: 2rem 1rem;
-  width: 95%;
   max-width: 1240px;
 }
 
@@ -56,6 +54,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2rem 1rem;
 }
 
 header .header__logo {
@@ -71,7 +70,9 @@ header .header__button {
 }
 
 main {
-  margin-top: 8vh;
+  width: 95%;
+  padding: 2rem 1rem;
+  margin: 8vh 1vh 0 1vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +80,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -111,11 +115,11 @@ section .button, section header .header__button, header section .header__button 
   margin: 10% 0;
 }
 
-.card-list {
+.merchan {
   margin-top: 10%;
 }
 
-.card-list .card, .card-list .card__grow, .card-list .card__flowing, .card-list .card__users {
+.merchan .card, .merchan .card__grow, .merchan .card__flowing, .merchan .card__users {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,15 +131,19 @@ section .button, section header .header__button, header section .header__button 
   padding: 10%;
 }
 
-.card-list .card h2, .card-list .card__grow h2, .card-list .card__flowing h2, .card-list .card__users h2 {
+.merchan .card h2, .merchan .card__grow h2, .merchan .card__flowing h2, .merchan .card__users h2 {
   margin: 40px 0 15px 0;
   text-align: center;
 }
 
-.card-list .card p, .card-list .card__grow p, .card-list .card__flowing p, .card-list .card__users p {
+.merchan .card p, .merchan .card__grow p, .merchan .card__flowing p, .merchan .card__users p {
   line-height: 21px;
   font-weight: 400;
   color: #808d99;
   text-align: center;
+}
+
+footer {
+  background-color: #00252e;
 }
 /*# sourceMappingURL=main.css.map */
