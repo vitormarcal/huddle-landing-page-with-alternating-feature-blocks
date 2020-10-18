@@ -21,11 +21,15 @@ input, button {
   font-family: "Open Sans", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
 .border-radius, .button, header .header__button, .merchan .card, .merchan .card__grow, .merchan .card__flowing, .merchan .card__users, .get-started {
   border: 1px solid white;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+          box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
 }
 
 .button, header .header__button {
@@ -133,7 +137,6 @@ section .button, section header .header__button, header section .header__button 
 
 .merchan .card h2, .merchan .card__grow h2, .merchan .card__flowing h2, .merchan .card__users h2 {
   margin: 40px 0 15px 0;
-  text-align: center;
 }
 
 .merchan .card p, .merchan .card__grow p, .merchan .card__flowing p, .merchan .card__users p {
@@ -143,8 +146,25 @@ section .button, section header .header__button, header section .header__button 
   text-align: center;
 }
 
+.get-started {
+  top: 17vh;
+  position: relative;
+  background-color: white;
+  min-width: 344px;
+  padding: 35px 0 10px 0;
+}
+
+.get-started h2 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.get-started .button, .get-started header .header__button, header .get-started .header__button {
+  margin: 26px;
+}
+
 footer {
-  padding: 25vh 2vh;
+  padding: 25vh 2vh 1vh 2vh;
   background-color: #00252e;
 }
 
