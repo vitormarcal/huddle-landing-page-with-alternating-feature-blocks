@@ -373,7 +373,7 @@ footer .copyright p {
 }
 
 @media (min-width: 1000px) {
-  .left, header .featured .featured__info h1, header .featured .featured__info p {
+  .left, header .featured .featured__info h1, header .featured .featured__info p, .merchan .card .card__info h2, .merchan .card__grow .card__info h2, .merchan .card__flowing .card__info h2, .merchan .card__users .card__info h2, .merchan .card .card__info p, .merchan .card__grow .card__info p, .merchan .card__flowing .card__info p, .merchan .card__users .card__info p {
     text-align: left;
     padding-left: 0;
   }
@@ -403,6 +403,53 @@ footer .copyright p {
   }
   header .featured img {
     width: 50%;
+  }
+  .merchan {
+    padding: 0 20px;
+  }
+  .merchan .card, .merchan .card__grow, .merchan .card__flowing, .merchan .card__users {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-bottom: 4%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .merchan .card .card__info, .merchan .card__grow .card__info, .merchan .card__flowing .card__info, .merchan .card__users .card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 3rem;
+  }
+  .merchan .card .card__info h2, .merchan .card__grow .card__info h2, .merchan .card__flowing .card__info h2, .merchan .card__users .card__info h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .merchan .card .card__info p, .merchan .card__grow .card__info p, .merchan .card__flowing .card__info p, .merchan .card__users .card__info p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .merchan .card img, .merchan .card__grow img, .merchan .card__flowing img, .merchan .card__users img {
+    width: 35%;
+  }
+  .merchan .card__flowing {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .merchan .card__flowing .card__info {
+    padding-right: 0;
+    padding-left: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
