@@ -494,6 +494,17 @@ footer .copyright p {
   header {
     padding: 0 3rem;
   }
+  header div .header__logo {
+    width: 200px;
+    height: 31px;
+  }
+  header div .header__button {
+    width: 200px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 19.07px;
+  }
   header .featured {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -582,6 +593,28 @@ footer .copyright p {
   footer {
     padding-left: 10vh;
     padding: 20vh 6vh;
+  }
+  footer .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer__info address {
+    width: 379px;
+  }
+  footer .footer__info nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__info nav ul {
+    margin-left: 5vw;
   }
 }
 
