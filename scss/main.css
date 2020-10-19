@@ -92,6 +92,15 @@ i:hover {
   color: #ff52bf;
 }
 
+.fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +223,15 @@ i {
 
 i:hover {
   color: #ff52bf;
+}
+
+.fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section {
@@ -380,7 +398,7 @@ main {
 }
 
 .get-started {
-  top: 10vh;
+  top: 17vh;
   position: relative;
   background-color: white;
   min-width: 333px;
@@ -451,6 +469,12 @@ footer nav .social {
 
 footer nav .social .social__item {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .copyright {

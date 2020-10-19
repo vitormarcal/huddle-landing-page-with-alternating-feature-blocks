@@ -186,6 +186,8 @@ footer {
       .social__item {
         @extend .filter__white;
         margin: 0;
+        display: flex;
+        justify-content: center;
       }
     }
   }
