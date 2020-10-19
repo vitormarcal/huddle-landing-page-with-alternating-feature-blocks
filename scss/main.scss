@@ -1,20 +1,19 @@
-@import 'utils.scss';
-@import 'principal.scss';
+@import "utils.scss";
+@import "principal.scss";
 
-@media(min-width: 1000px) {
-
+@media (min-width: 1000px) {
   .left {
     text-align: left;
     padding-left: 0;
   }
-    
+
   header {
     padding: 0 3rem;
-    
+
     .featured {
       flex-direction: row;
       padding: 0;
-      
+
       .featured__info {
         max-width: 536px;
         align-items: start;
@@ -24,7 +23,7 @@
           font-size: 40px;
           line-height: 60px;
         }
-        
+
         p {
           @extend .left;
           font-size: 18px;
@@ -38,46 +37,41 @@
     }
   }
 
+  .merchan {
+    padding: 0 20px;
+    .card {
+      flex-direction: row-reverse;
+      margin-bottom: 4%;
+      justify-content: space-between;
+      .card__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 3rem;
 
-.merchan {
-  padding: 0 20px;
-  .card {
-    flex-direction: row-reverse;
-    margin-bottom: 4%;
-    justify-content: space-between;
-    .card__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-right: 3rem;
+        h2 {
+          @extend .left;
+          font-size: 28px;
+          line-height: 42px;
+        }
 
-      h2 {
-        @extend .left;
-        font-size: 28px;
-        line-height: 42px;
+        p {
+          @extend .left;
+          font-size: 18px;
+          line-height: 27px;
+        }
       }
-      
-      p {
-        @extend .left;
-        font-size: 18px;
-        line-height: 27px;
+      img {
+        width: 35%;
       }
     }
-    img {
-      width: 35%;
+
+    .card__flowing {
+      flex-direction: row;
+      .card__info {
+        padding-right: 0;
+        padding-left: 3rem;
+      }
     }
   }
-
-  .card__flowing {
-    flex-direction: row;
-    .card__info {
-      padding-right: 0;
-      padding-left: 3rem;
-    }
-  }
-
-}
-      
-  
-
 }
