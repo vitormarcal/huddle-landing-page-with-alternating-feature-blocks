@@ -172,7 +172,6 @@ section .button, section header .header__button, header section .header__button 
 
 body {
   margin: 0 auto;
-  max-width: 1240px;
 }
 
 header {
@@ -262,7 +261,8 @@ header .featured img {
 main {
   width: 95%;
   padding: 0 1rem;
-  margin: 8vh 1vh 0 1vh;
+  margin: 8vh auto;
+  max-width: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
