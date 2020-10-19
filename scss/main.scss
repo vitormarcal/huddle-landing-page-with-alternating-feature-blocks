@@ -156,6 +156,7 @@ header {
     padding-bottom: 1rem;
     line-height: 24px;
     padding: 5px 26px;
+    margin: 2rem 0;
 
     .button {
       @extend .border-radius--plus;
@@ -275,7 +276,7 @@ main {
     }
 
     .copyright {
-      margin-top: 8vh;
+      margin: 8vh 0 2vh 0;
       text-align: center;
       p {
         @extend .font-poppins;

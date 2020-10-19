@@ -153,6 +153,7 @@ header .featured {
   padding-bottom: 1rem;
   line-height: 24px;
   padding: 5px 26px;
+  margin: 2rem 0;
 }
 
 header .featured img {
@@ -264,7 +265,7 @@ footer nav li a {
 }
 
 footer .copyright {
-  margin-top: 8vh;
+  margin: 8vh 0 2vh 0;
   text-align: center;
 }
 
