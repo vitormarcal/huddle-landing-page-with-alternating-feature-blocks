@@ -279,6 +279,15 @@ footer nav li a {
   line-height: 27px;
 }
 
+footer nav .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer nav .social i {
   border: 1px solid #fff;
   border-radius: 50%;
