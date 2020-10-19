@@ -203,10 +203,10 @@ main {
 }
 
 .get-started {
-  top: 17vh;
+  top: 10vh;
   position: relative;
   background-color: white;
-  min-width: 344px;
+  min-width: 333px;
   padding: 35px 0 10px 0;
 }
 
