@@ -92,6 +92,15 @@ i:hover {
   color: #ff52bf;
 }
 
+.fab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
