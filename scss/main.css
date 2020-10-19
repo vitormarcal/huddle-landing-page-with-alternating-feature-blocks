@@ -565,5 +565,30 @@ footer .copyright p {
     padding-right: 0;
     padding-left: 3rem;
   }
+  .get-started {
+    width: 800px;
+  }
+  .get-started h2 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .get-started .button, .get-started header .header__button, header .get-started .header__button {
+    width: 400px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 50px;
+  }
+  footer {
+    padding-left: 10vh;
+    padding: 20vh 6vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  footer {
+    padding-left: 10vh;
+    padding: 20vh;
+  }
 }
 /*# sourceMappingURL=main.css.map */
