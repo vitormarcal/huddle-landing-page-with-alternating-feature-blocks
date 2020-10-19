@@ -74,4 +74,31 @@
       }
     }
   }
+
+  .get-started {
+    width: 800px;
+    h2 {
+      font-size: 32px;
+      line-height: 60px;
+    }
+    .button {
+      width: 400px;
+      height: 80px;
+      font-size: 20px;
+      line-height: 30px;
+      border-radius: 50px;
+    }
+  }
+
+  footer {
+    padding-left: 10vh;
+    padding: 20vh 6vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  footer {
+    padding-left: 10vh;
+    padding: 20vh;
+  }
 }
