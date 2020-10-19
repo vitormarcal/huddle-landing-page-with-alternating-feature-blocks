@@ -250,8 +250,8 @@ main {
 }
 
 footer {
-  height: 100vh;
-  padding: 0 1vh 0 3vh;
+  height: 130vh;
+  padding: 20vh 1vh 0 3vh;
   background-color: #00252e;
 }
 
@@ -299,6 +299,7 @@ footer nav .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 7vh;
 }
 
 footer nav .social .social__item {

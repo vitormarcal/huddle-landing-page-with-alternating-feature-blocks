@@ -145,8 +145,8 @@ body {
     }
   
     footer {
-      height: 100vh;
-      padding: 0 1vh 0 3vh;
+      height: 130vh;
+      padding: 20vh 1vh 0 3vh;
       background-color: $very-dark-cyan;
   
       .footer__logo {
@@ -189,6 +189,7 @@ body {
         .social {
           display: flex;
           justify-content: center;
+          margin: 7vh;
 
           .social__item {
             margin: 0;
