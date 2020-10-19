@@ -1,112 +1,129 @@
 // start variables
-  
+
 $pink: hsl(322, 100%, 66%);
 $very-pale-cyan: hsl(193, 100%, 96%);
 $very-dark-cyan: hsl(192, 100%, 9%);
 $grayish-blue: hsl(208, 11%, 55%);
 
-$font-family-poppins-sans-serif: 'Poppins', sans-serif;
-$font-family-open-sans-serif: 'Open Sans', sans-serif;
+$font-family-poppins-sans-serif: "Poppins", sans-serif;
+$font-family-open-sans-serif: "Open Sans", sans-serif;
 
 // end variables
 
 //start resets css
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .font-poppins {
-font-family: $font-family-poppins-sans-serif;
+  font-family: $font-family-poppins-sans-serif;
 }
 
 .font-open {
-font-family: $font-family-open-sans-serif;
+  font-family: $font-family-open-sans-serif;
+}
+
+.filter__white {
+  filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(203deg) brightness(103%) contrast(104%);
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
-color: white;
-font-weight: 400;
-font-style: normal;
-text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+
+  &:hover {
+    color: $pink;
+  }
 }
 
-input, button {
-@extend .font-open;
-border:none;
-background-image:none;
-background-color:transparent;
--webkit-box-shadow: none;
--moz-box-shadow: none;
-box-shadow: none;
+input,
+button {
+  @extend .font-open;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 //end resets css
 
-h1, h2, h3, h4, h5, h6 {
-@extend .font-poppins;
-text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .font-poppins;
+  text-align: center;
 }
 
 .border-radius {
-border: 1px solid white;
-border-radius: 15px;
-box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
+  border: 1px solid white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
 }
 
 .border-radius--plus {
-border-radius: 26px;
+  border-radius: 26px;
 }
 
 .button {
-@extend .font-open;
-@extend .border-radius;
-background-color: $pink;
-width: 240px;
-height: 40px;
+  @extend .font-open;
+  @extend .border-radius;
+  background-color: $pink;
+  width: 240px;
+  height: 40px;
 
-font-size: 16px;
-line-height: 16.34px;
-color: $very-pale-cyan;
-text-align: center;
-font-weight: bold;
-
+  font-size: 16px;
+  line-height: 16.34px;
+  color: $very-pale-cyan;
+  text-align: center;
+  font-weight: bold;
 }
 
 i {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    margin-right: 1rem;
-    height: 2rem;
-    width: 2rem;
-    padding: 0.6rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.6rem;
 
-    &:hover {
-      color: #ff52bf;
-    }
+  &:hover {
+    color: #ff52bf;
   }
+}
 
 section {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.title {
+  .title {
     padding: 1rem;
     text-align: center;
-}
-  
-.text {
+  }
+
+  .text {
     text-align: center;
-}
+  }
 
-img {
+  img {
     width: 100%;
-}
+  }
 
-.button {
-  margin: 10% 0;
-}
+  .button {
+    margin: 10% 0;
+  }
 }
